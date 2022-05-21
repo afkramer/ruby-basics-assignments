@@ -20,5 +20,13 @@ describe CaesarCipher do
     it 'can shift more than 26 places' do
       expect(caesar.shift('abc', 29)).to eq('def')
     end
+
+    it 'can shift backwards' do
+      expect(caesar.shift('def', -3)).to eq('abc')
+    end
+
+    it 'can shift from the end to beginning of the alphabet' do
+      expect(caesar.shift('xyz', 3)).to eq('abc')
+    end
   end
 end
