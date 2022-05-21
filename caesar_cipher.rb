@@ -32,6 +32,6 @@ class CaesarCipher
       code.chr
     end
 
-    puts letters_shifted.join
+    letters_shifted.join
   end
 end
